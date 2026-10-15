@@ -3,7 +3,7 @@
 # Copy these from your README so the baseline is judged on exactly the
 # definitions you wrote. baseline.py reads this file.
 
-advice: Tells the reader what to do: a practical suggestion or action, usually phrased as an instruction.
-analysis: Explains or weighs an issue in a balanced, reasoned way, without telling anyone what to do or venting.
-hot_take: States a bold, one-sided opinion as a flat claim, without offering reasoning or support.
-complaint: Expresses personal frustration or grievance about how someone is treated, often starting with "It's frustrating", "I'm tired of" or "Why…".
+advice: Tells the reader what to do: a practical suggestion or action, phrased as an instruction.
+analysis: Explains how or why something happens, hedged ("can", "may", "often") or with a reason ("because", "so"), without telling anyone what to do or venting.
+hot_take: States a bold, one-sided opinion as a flat claim ("should", "is not", "needs to stop"), with no hedging or reasoning.
+complaint: Vents personal frustration about specific people or situations ("I'm tired of", "It's frustrating when", "Why do relatives…"), rather than making a general claim.
