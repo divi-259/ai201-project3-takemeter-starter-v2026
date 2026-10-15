@@ -60,7 +60,7 @@ one of four labels: `advice`, `analysis`, `hot_take` or `complaint`.
 
 ### `advice`
 
-**Definition:** Tells the reader what to do: a practical suggestion or action, usually phrased as an instruction.
+**Definition:** Tells the reader what to do: a practical suggestion or action, phrased as an instruction.
 
 **Example 1:**
 > Tell your family what you can offer instead of saying yes out of guilt.
@@ -70,7 +70,7 @@ one of four labels: `advice`, `analysis`, `hot_take` or `complaint`.
 
 ### `analysis`
 
-**Definition:** Explains or weighs an issue in a balanced, reasoned way, without telling anyone what to do or venting.
+**Definition:** Explains how or why something happens, hedged ("can", "may", "often") or with a reason ("because", "so"), without telling anyone what to do or venting.
 
 **Example 1:**
 > Family obligations become harder to evaluate when practical needs and social expectations are mixed together.
@@ -80,7 +80,7 @@ one of four labels: `advice`, `analysis`, `hot_take` or `complaint`.
 
 ### `hot_take`
 
-**Definition:** States a bold, one-sided opinion as a flat claim, without offering reasoning or support.
+**Definition:** States a bold, one-sided opinion as a flat claim ("should", "is not", "needs to stop"), with no hedging or reasoning.
 
 **Example 1:**
 > Choosing yourself is not automatically selfish; sometimes it is overdue.
@@ -90,7 +90,7 @@ one of four labels: `advice`, `analysis`, `hot_take` or `complaint`.
 
 ### `complaint`
 
-**Definition:** Expresses personal frustration or grievance about how someone is treated, often starting with "It's frustrating", "I'm tired of" or "Why…".
+**Definition:** Vents personal frustration about specific people or situations ("I'm tired of", "It's frustrating when", "Why do relatives…"), rather than making a general claim.
 
 **Example 1:**
 > It's exhausting when every boundary gets interpreted as disrespect.
@@ -100,13 +100,16 @@ one of four labels: `advice`, `analysis`, `hot_take` or `complaint`.
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `hot_take` vs `analysis`. Both state an opinion about
+family life, and some posts labelled `hot_take` gave a reason, which made them
+closer to `analysis`.
 
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
-
-
+A flat claim ("should", "is not", "needs to stop") is `hot_take`. If the post
+hedges ("can", "may", "often") or gives a reason ("because", "so"), it's
+`analysis`.
 
 ---
 
@@ -130,10 +133,10 @@ the wrong category.
 
 | Label | Count | Share |
 |---|---|---|
-| `complaint` | 60 | 30% |
-| `hot_take` | 56 | 28% |
-| `analysis` | 48 | 24% |
-| `advice` | 36 | 18% |
+| `hot_take` | 60 | 30% |
+| `analysis` | 55 | 27.5% |
+| `complaint` | 50 | 25% |
+| `advice` | 35 | 17.5% |
 | **Total** | 200 | 100% |
 
 **Three hard cases**
@@ -142,25 +145,28 @@ the wrong category.
      been, and what you chose. These are worth more than the easy 190. -->
 
 **1.**
-> *The post:*
+> *The post:* "Parents who demand constant sacrifice can undermine the closeness they want."
 >
-> *Could have been:*
+> *Could have been:* `hot_take` or `analysis`
 >
-> *I chose, because:*
+> *I chose `analysis`, because:* the word "can" hedges the claim. It describes
+> what might happen rather than stating a flat opinion.
 
 **2.**
-> *The post:*
+> *The post:* "An obligation carried by only one sibling is often an unfair tradition."
 >
-> *Could have been:*
+> *Could have been:* `hot_take` or `analysis`
 >
-> *I chose, because:*
+> *I chose `analysis`, because:* the word "often" hedges the claim, so it is a
+> general observation rather than a bold, one-sided take.
 
 **3.**
-> *The post:*
+> *The post:* "Helping out of fear may look like devotion, but it often creates resentment."
 >
-> *Could have been:*
+> *Could have been:* `hot_take` or `analysis`
 >
-> *I chose, because:*
+> *I chose `analysis`, because:* it gives a reason. It explains how helping out
+> of fear leads to resentment, instead of just declaring it wrong.
 
 ---
 
