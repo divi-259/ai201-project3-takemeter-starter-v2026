@@ -174,16 +174,30 @@ the wrong category.
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`
 
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
+3 epochs, learning rate 2e-5, batch size 16, max length 128 tokens, seed 42.
+Trained on an Apple Silicon GPU (MPS), torch 2.14.1.
 
 **Anything I changed from the defaults, and why:**
+Nothing. I only set `LABELS` to my four labels. I wanted a plain first run to
+compare against before changing anything.
 
 **Split sizes:** <!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
+Train 139 / val 31 / test 30 (stratified 70/15/15, seed 42).
 
+| Label | Train | Val | Test |
+|---|---|---|---|
+| `hot_take` | 42 | 9 | 9 |
+| `complaint` | 34 | 8 | 8 |
+| `analysis` | 38 | 9 | 8 |
+| `advice` | 25 | 5 | 5 |
+
+`advice` has only 5 posts in the test split, so one wrong post changes its F1
+a lot. Its score will likely jump around between seeds.
 
 
 ---
@@ -199,15 +213,15 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Help me understand the structure of the repo
+- *What came back:* It gave me good step by step explanation of how to check files, what to do, and where to look for.
+- *What I changed:* I started by reading running.md and then readme.md, and looked for all the important files.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* How can I refine the definitions of labels
+- *What came back:* It came with a distiction for "analysis" and "hot_take" label and also suggested the more clear definitions of the labels.
+- *What I changed:* i updated the definitions of the labels, and also clearly classified the data according to the better definitions.
 
 **Pre-labelling disclosure:**
 
