@@ -51,63 +51,53 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Overall accuracy
 
 <!-- Your criterion. It must name a number. -->
 
+Accuracy on the held-out test set is at least 0.70 on all three seeds.
 
-
-**Why this target:**
-
-
+**Why this target:** With four labels, random guessing gets about 25%, and always guessing `hot_take` gets 30%. So 0.70 means the model is really reading the posts. I didn't go higher because the test set is only about 30 posts, so one wrong post changes accuracy by about 3 points.
 
 ---
 
-## 2.
+## 2. Per-label performance
 
 <!-- Your criterion. -->
 
+On all three seeds, F1 is at least 0.70 for `complaint`, 0.60 for `hot_take` and `analysis`, and 0.55 for `advice`.
 
-
-**Why this target:**
-
-
+**Why this target:** `complaint` is the easiest to spot because it uses phrases like "I'm tired of". `hot_take` and `analysis` get a lower target because they are easy to confuse: the only difference is a hedge word or a reason. `advice` is my smallest label, with only about 5 posts in the test set, so its score will jump around the most.
 
 ---
 
-## 3.
+## 3. Balance
 
 <!-- Your criterion. -->
 
+The largest label has no more than 2 times as many posts as the smallest label.
 
-
-**Why this target:**
-
-
+**Why this target:** Right now `hot_take` has 60 posts and `advice` has 35, which is 1.7 times. If `advice` gets much smaller, the model won't see enough examples to learn it. Its test score would also be based on too few posts to mean anything.
 
 ---
 
-## 4.
+## 4. Consistency
 
 <!-- Your criterion. -->
 
+When I label the 30 staff posts, I agree with the staff labels on at least 80% of them (24 of 30).
 
-
-**Why this target:**
-
-
+**Why this target:** My definitions handle the confusing cases, but they can't cover everything. The staff definitions are also a bit different from mine, so a few disagreements are expected. If I agree less than 80% of the time, my own labels are probably not consistent enough to train on.
 
 ---
 
-## 5.
+## 5. Confidence
 
 <!-- Your criterion. -->
 
+When the model is at least 80% confident, its prediction is right at least 80% of the time, on all three seeds.
 
-
-**Why this target:**
-
-
+**Why this target:** A confident prediction should be right more often than the 0.70 overall target. If it isn't, I can't use the confidence score to decide which predictions need a second look.
 
 ---
 
