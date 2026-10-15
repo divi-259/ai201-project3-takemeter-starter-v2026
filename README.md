@@ -41,8 +41,12 @@
 
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
-
-
+The community is **Personal Values and Societal Expectations**: discussion about
+how a person should live in today's society. Should people put their own freedom
+first and be less involved with family and community, or the other way round?
+Posts cover opinions on living alone versus in a community, raising children,
+marriage, caregiving and family obligations. The classifier sorts each post into
+one of four labels: `advice`, `analysis`, `hot_take` or `complaint`.
 
 ---
 
@@ -54,25 +58,45 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `advice`
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition:** Tells the reader what to do: a practical suggestion or action, usually phrased as an instruction.
 
 **Example 1:**
->
+> Tell your family what you can offer instead of saying yes out of guilt.
 
 **Example 2:**
->
+> Set expectations early, before a temporary favor becomes a permanent assumption.
+
+### `analysis`
+
+**Definition:** Explains or weighs an issue in a balanced, reasoned way, without telling anyone what to do or venting.
+
+**Example 1:**
+> Family obligations become harder to evaluate when practical needs and social expectations are mixed together.
+
+**Example 2:**
+> Parents may experience independence as loss, while adult children experience involvement as pressure.
+
+### `hot_take`
+
+**Definition:** States a bold, one-sided opinion as a flat claim, without offering reasoning or support.
+
+**Example 1:**
+> Choosing yourself is not automatically selfish; sometimes it is overdue.
+
+**Example 2:**
+> Gratitude is not the same thing as lifelong obedience.
+
+### `complaint`
+
+**Definition:** Expresses personal frustration or grievance about how someone is treated, often starting with "It's frustrating", "I'm tired of" or "Why…".
+
+**Example 1:**
+> It's exhausting when every boundary gets interpreted as disrespect.
+
+**Example 2:**
+> It's frustrating when family members ignore agreed boundaries and then accuse you of being distant.
 
 ### The hardest boundary
 
@@ -90,20 +114,27 @@
 
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
+I used AI to search Reddit for the most common comments on the topic of the
+individual versus society. I took some inspiration from the practice labels and
+from reading through the comments, and settled on four labels: `advice`,
+`analysis`, `hot_take` and `complaint`.
 
-**Where the posts came from:**
+**Where the posts came from:** Reddit, gathered with the help of AI.
 
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
+Labelled using AI, then reviewed by me. I corrected any post I felt was in
+the wrong category.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `complaint` | 60 | 30% |
+| `hot_take` | 56 | 28% |
+| `analysis` | 48 | 24% |
+| `advice` | 36 | 18% |
+| **Total** | 200 | 100% |
 
 **Three hard cases**
 
