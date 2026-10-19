@@ -98,6 +98,17 @@ one of four labels: `advice`, `analysis`, `hot_take` or `complaint`.
 **Example 2:**
 > It's frustrating when family members ignore agreed boundaries and then accuse you of being distant.
 
+### Stretch: a fourth label (`advice`)
+
+`advice` is my fourth label, added as a stretch. The other three labels all
+describe a post's opinion or feeling. `hot_take` makes a claim, `analysis`
+explains a claim, and `complaint` vents about one. None of them fit posts that
+tell the reader what to do, like "Set expectations early." In this community,
+many posts are practical suggestions for dealing with family pressure. Without
+`advice`, those posts would be forced into `hot_take` because they sound sure
+of themselves, even though they don't argue for an opinion. The test is
+simple: if the post is an instruction to the reader, it's `advice`.
+
 ### The hardest boundary
 
 **Which two labels:** `hot_take` vs `analysis`. Both state an opinion about
