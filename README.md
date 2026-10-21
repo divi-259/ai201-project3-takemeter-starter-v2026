@@ -267,7 +267,18 @@ I think the baseline should be able to classify complaint and advice based on th
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
 
+Based on the definitions of the labels, the baseline model is not able to make the correct prediction, and somehow the baseline model without definitions is performing better, here are the stats. 
+I ran the baseline twice on the same 30 posts. With my definitions it scored 0.167 accuracy; with bare label names it scored 0.633. My definitions hurt by 47 points.
 
+
+| Measure | Baseline without definitions | Trained | Difference |
+|---|---|---|---|
+| Overall accuracy | 0.633 | 0.767 | +0.133 |
+| Macro F1 | 0.597 | 0.796 | +0.198 |
+| F1 — `advice` | 0.889 | 1.000 | +0.111 |
+| F1 — `analysis` | 0.000 | 0.625 | +0.625 |
+| F1 — `complaint` | 0.857 | 0.857 | +0.000 |
+| F1 — `hot_take` | 0.643 | 0.700 | +0.057 |
 
 ---
 
