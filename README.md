@@ -287,24 +287,35 @@ I ran the baseline twice on the same 30 posts. With my definitions it scored 0.1
 <!-- Five criteria across three seeds. The notebook's section 6 prints the
      spread table; the Target and Verdict columns are yours. -->
 
-| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
-|---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.767 | 0.767 | 0.633 | 0.133 |
+| Macro F1 | 0.796 | 0.785 | 0.586 | 0.209 |
+| F1 — `hot_take` | 0.700 | 0.625 | 0.737 | 0.112 |
+| F1 — `complaint` | 0.857 | 0.714 | 0.000 | 0.857 |
+| F1 — `analysis` | 0.625 | 0.800 | 0.609 | 0.191 |
+| F1 — `advice` | 1.000 | 1.000 | 1.000 | 0.000 |
+
+Accuracy moved 0.133 across seeds — more than 10 points. dataset is too small or too lopsided for a stable measure.
+
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| true \ predicted | hot_take | complaint | analysis | advice |
+|---|---|---|---|---|
+| **hot_take** | 7 | 0 | 2 | 0 |
+| **complaint** | 1 | 6 | 1 | 0 |
+| **analysis** | 3 | 0 | 5 | 0 |
+| **advice** | 0 | 0 | 0 | 5 |
+
+Biggest confusion: 3 real `analysis` posts called `hot_take`.
+The other direction: 2 real `hot_take` posts called `analysis`.
+
+Roughly symmetric — the model finds this pair hard in both directions,
+which more often means the boundary itself is genuinely hard.
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
