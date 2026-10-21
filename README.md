@@ -243,6 +243,7 @@ a lot. Its score will likely jump around between seeds.
 
 ---
 
+
 ## Baseline vs. Trained
 
 <!-- Both models on the same posts. `python baseline.py --trained results.json`
@@ -250,14 +251,17 @@ a lot. Its score will likely jump around between seeds.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.167 | 0.767 | +0.600 |
+| Macro F1 | 0.111 | 0.796 | +0.685 |
+| F1 — `advice` | 0.242 | 1.000 | +0.758 |
+| F1 — `analysis` | 0.200 | 0.625 | +0.425 |
+| F1 — `complaint` | 0.000 | 0.857 | +0.857 |
+| F1 — `hot_take` | 0.000 | 0.700 | +0.700 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
+I think the baseline should be able to classify complaint and advice based on their definitions. But in few cases of hot_takes and analysis, it may give incorrectly classified result.
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added

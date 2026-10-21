@@ -1,0 +1,190 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.16666666666666666,
+    "f1_macro": 0.11060606060606061,
+    "per_label": {
+      "advice": {
+        "precision": 0.14285714285714285,
+        "recall": 0.8,
+        "f1": 0.24242424242424243,
+        "support": 5
+      },
+      "analysis": {
+        "precision": 0.5,
+        "recall": 0.125,
+        "f1": 0.2,
+        "support": 8
+      },
+      "complaint": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "hot_take": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Responsibilities based on genuine promises differ from duties imposed after the fact.",
+      "gold": "analysis",
+      "predicted": "advice"
+    },
+    {
+      "text": "Gratitude is not the same thing as lifelong obedience.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "Parents can feel disappointed, but disappointment is not a veto.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "Personal freedom includes accepting consequences, not simply choosing without considering anyone else.",
+      "gold": "analysis",
+      "predicted": "advice"
+    },
+    {
+      "text": "Consider structured visits or shorter calls if open-ended contact regularly turns into conflict.",
+      "gold": "advice",
+      "predicted": "advice"
+    },
+    {
+      "text": "Healthy interdependence leaves room for personal goals while recognizing mutual responsibilities.",
+      "gold": "analysis",
+      "predicted": "advice"
+    },
+    {
+      "text": "I'm tired of being told that my plans can wait because someone else's preferences come first.",
+      "gold": "complaint",
+      "predicted": "advice"
+    },
+    {
+      "text": "Why do families discuss responsibilities only after one person is already overwhelmed?",
+      "gold": "complaint",
+      "predicted": "advice"
+    },
+    {
+      "text": "Boundaries are clearer when they describe what someone can offer instead of trying to control others.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Some families treat independence as betrayal instead of a normal part of adulthood.",
+      "gold": "complaint",
+      "predicted": "advice"
+    },
+    {
+      "text": "A guilt-free no is a sign of a healthier relationship, not a colder one.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "Explain what respect means to you instead of arguing over labels like disrespectful.",
+      "gold": "advice",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Love that cannot tolerate boundaries often depends too much on control.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "Sometimes the most respectful answer is a clear no.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "Culture deserves respect, but no tradition should be immune from scrutiny.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "Tradition can be meaningful when participation is voluntary and harmful when refusal is treated as betrayal.",
+      "gold": "analysis",
+      "predicted": "advice"
+    },
+    {
+      "text": "I can't plan my own holidays without someone acting like I've rejected the entire family.",
+      "gold": "complaint",
+      "predicted": "advice"
+    },
+    {
+      "text": "It's frustrating when help is offered and then used to control the recipient.",
+      "gold": "complaint",
+      "predicted": "advice"
+    },
+    {
+      "text": "It's exhausting to be responsible for keeping everyone else happy.",
+      "gold": "complaint",
+      "predicted": "advice"
+    },
+    {
+      "text": "Respect for elders and respect for adult autonomy are not inherently incompatible.",
+      "gold": "analysis",
+      "predicted": "advice"
+    },
+    {
+      "text": "Listen to a parent's concern, then evaluate whether their proposed solution makes sense.",
+      "gold": "advice",
+      "predicted": "advice"
+    },
+    {
+      "text": "Every family decision somehow turns into a debate about whether I'm grateful enough.",
+      "gold": "complaint",
+      "predicted": "advice"
+    },
+    {
+      "text": "Being geographically closest should not automatically make someone the permanent caregiver.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "Agree with your spouse on boundaries with both sides of the family.",
+      "gold": "advice",
+      "predicted": "advice"
+    },
+    {
+      "text": "Parental sacrifice deserves appreciation, but it does not create unlimited authority over a child's future.",
+      "gold": "analysis",
+      "predicted": "advice"
+    },
+    {
+      "text": "Choosing family over an opportunity can be meaningful, but it is less healthy when the choice is coerced.",
+      "gold": "analysis",
+      "predicted": "advice"
+    },
+    {
+      "text": "Being nearby does not make you automatically responsible for every family emergency.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "Family should be a source of support, not a committee that approves your life.",
+      "gold": "hot_take",
+      "predicted": "advice"
+    },
+    {
+      "text": "I'm tired of relatives treating my boundaries as an invitation to negotiate.",
+      "gold": "complaint",
+      "predicted": "advice"
+    },
+    {
+      "text": "Do not promise more time than you can sustainably give.",
+      "gold": "advice",
+      "predicted": "advice"
+    }
+  ]
+}
