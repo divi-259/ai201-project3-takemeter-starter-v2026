@@ -122,6 +122,15 @@ A flat claim ("should", "is not", "needs to stop") is `hot_take`. If the post
 hedges ("can", "may", "often") or gives a reason ("because", "so"), it's
 `analysis`.
 
+### Second boundary: `complaint` vs `hot_take` / `analysis`
+
+**The decision rule I used every time:**
+A post is `complaint` only if it vents with a frustration phrase ("I'm tired
+of", "It's frustrating/exhausting/unfair when", "Why do…?") or describes the
+writer's own situation. If it is a general statement about how families work,
+it is not a `complaint`. Use the `hot_take` vs `analysis` rule instead.
+
+
 ---
 
 ## The Dataset
@@ -232,6 +241,12 @@ a lot. Its score will likely jump around between seeds.
 
 - *What I asked for:* How can I refine the definitions of labels
 - *What came back:* It came with a distiction for "analysis" and "hot_take" label and also suggested the more clear definitions of the labels.
+- *What I changed:* i updated the definitions of the labels, and also clearly classified the data according to the better definitions.
+
+**Moment 3**
+
+- *What I asked for:* I used it to understand the close boundary definition of hot_take label and complaint label
+- *What came back:* It came with a distiction for "complaint" and "hot_take" label and also suggested the more clear definitions of the labels.
 - *What I changed:* i updated the definitions of the labels, and also clearly classified the data according to the better definitions.
 
 **Pre-labelling disclosure:**
@@ -421,6 +436,7 @@ whether the post is about a specific situation or a general claim.
 ## The Improvement
 
 **What I changed:**
+Added a Second boundary: `complaint` vs `hot_take` / `analysis`
 
 **Which diagnosis pointed at it:**
 
@@ -428,31 +444,44 @@ whether the post is about a specific situation or a general claim.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.70 on all three seeds | 0.700 | 0.633 | 0.767 | **MISSED** (seed 7) |
+| 2. Per-label F1 | `complaint` ≥ 0.70, `hot_take` / `analysis` ≥ 0.60, `advice` ≥ 0.55 | `complaint` 0.000 · `hot_take` 0.667 · `analysis` 0.818 · `advice` 0.909 | `complaint` 0.000 · `hot_take` 0.645 · `analysis` 0.615 · `advice` 1.000 | `complaint` 0.500 · `hot_take` 0.769 · `analysis` 0.750 · `advice` 1.000 | **MISSED** (`complaint` on all three seeds) |
+| 3. Balance | Largest label ≤ 2× the smallest | 67 / 35 = 1.91× | 1.91× | 1.91× | **MET** |
+| 4. Consistency | ≥ 80% agreement with staff labels | 97% | 97% | 97% | **MET** (labelling doesn't depend on the seed) |
+| 5. Confidence (revised) | Most-confident third right more often than least-confident third | 0.90 vs 0.30 | 0.80 vs 0.50 | 0.80 vs 0.60 | **MET** |
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
+criteria 1 and 2 are still MISSED, and 3, 4 and 5 (revised) are MET.
 
 
-
+Two changes together likely caused this:
+Fewer examples. complaint dropped from 50 to 41 posts, about 29 in training. hot_take grew to 67, so the model leans towards hot_take when unsure.
+The posts that are kept are closer to hot_take. The remaining complaints are mostly general statements with a venting phrase ("It's unfair when…", "Why do…?"). The model can't separate those from hot_take's flat claims with this little data.
 ---
 
 ## What's Still Broken
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
-
+Criteria 1 and 2 are still not met, the complaint is not being properly categorised. We can add more data points for the complaint posts to better train the model.
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
+I meant the complaint lables to capture the personal vent and frustration of a person, but due to it's boundary being very close to hot_take, it is being labled under that label. 
 
+| true \ predicted | hot_take | complaint | analysis | advice |
+|---|---|---|---|---|
+| **hot_take** | 7 | 0 | 2 | 1 |
+| **complaint** | 4 | 0 | 2 | 0 |
+| **analysis** | 0 | 0 | 9 | 0 |
+| **advice** | 0 | 0 | 0 | 5 |
+
+Biggest confusion: 4 real `complaint` posts called `hot_take`.
+The other direction: 0 real `hot_take` posts called `complaint`.
 
 
 <!-- ═════════════════════════════════════════════════════════════════════

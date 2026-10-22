@@ -1,6 +1,6 @@
 text,label,note
 Being unmarried does not make someone the family's default caregiver.,hot_take,Labelled using AI
-It's frustrating when help is offered and then used to control the recipient.,complaint,Labelled using AI
+It's frustrating when help is offered and then used to control the recipient.,hot_take,cold
 It's frustrating to have a full-time job and still be treated as permanently available.,complaint,Labelled using AI
 Distance from family does not automatically indicate a lack of love or gratitude.,analysis,Labelled using AI
 Expecting identical contributions from relatives with very different resources can be unfair.,analysis,Labelled using AI
@@ -8,14 +8,14 @@ Family traditions deserve to be questioned when the same people always pay the p
 People should stop treating their children's milestones as family property.,hot_take,Labelled using AI
 Agree on a sustainable amount before committing to regular financial support.,advice,Labelled using AI
 Do not treat guilt as proof that you have done something wrong.,hot_take,cold
-Some relatives treat a different opinion as a personal attack.,complaint,Labelled using AI
+Some relatives treat a different opinion as a personal attack.,hot_take,cold
 Sometimes moving away is the healthiest thing an adult child can do for the family.,hot_take,Labelled using AI
 Do not make decisions about marriage or children just to avoid disappointing relatives.,advice,Labelled using AI
 Separate urgent needs from preferences; they should not carry the same obligation.,advice,Labelled using AI
 Adults should not have to prove loyalty before making ordinary decisions.,hot_take,Labelled using AI
 Ask siblings to agree on a plan instead of relying on whoever feels most guilty.,advice,Labelled using AI
 Try to protect both the relationship and each person's right to choose.,advice,Labelled using AI
-Family pressure makes even exciting life decisions feel like something to defend.,complaint,Labelled using AI
+Family pressure makes even exciting life decisions feel like something to defend.,analysis,cold
 "Personal freedom includes accepting consequences, not simply choosing without considering anyone else.",analysis,Labelled using AI
 Parents are not owed grandchildren.,hot_take,Labelled using AI
 Respect for elders should not require treating every opinion as unquestionable.,hot_take,Labelled using AI
@@ -30,7 +30,7 @@ Family guilt is still manipulation when it is used to force a yes.,hot_take,Labe
 Parents can offer valuable experience without being right about every personal decision.,analysis,Labelled using AI
 "Parental sacrifice deserves appreciation, but it does not create unlimited authority over a child's future.",analysis,Labelled using AI
 It's unfair to use past sacrifices as leverage in every disagreement.,complaint,Labelled using AI
-There's no reason every holiday needs to become a test of loyalty.,complaint,Labelled using AI
+There's no reason every holiday needs to become a test of loyalty.,hot_take,cold
 It's exhausting to be responsible for keeping everyone else happy.,complaint,Labelled using AI
 "Family is important, but it is not an excuse to ignore consent.",hot_take,Labelled using AI
 Social approval can make family demands feel mandatory even when no one has explicitly agreed to them.,analysis,Labelled using AI
@@ -63,7 +63,7 @@ Acknowledge your parents' feelings without giving them the final say over your l
 "Family duty should be negotiated, not assigned by birth order or gender.",hot_take,Labelled using AI
 Why are personal choices discussed with extended relatives before the person involved is even asked?,complaint,Labelled using AI
 It's hard to maintain trust when private information becomes family gossip.,complaint,Labelled using AI
-Some family traditions seem to matter only because people are afraid of criticism.,complaint,Labelled using AI
+Some family traditions seem to matter only because people are afraid of criticism.,hot_take,cold
 "A fair arrangement considers need, capacity, past contributions, and each person's limits.",analysis,Labelled using AI
 It's exhausting when every independent decision is interpreted as proof that the family failed.,complaint,Labelled using AI
 "Before moving for work, discuss practical care plans with relatives who depend on you.",advice,Labelled using AI
@@ -97,7 +97,7 @@ Being geographically closest should not automatically make someone the permanent
 Be honest about your budget before offering money to relatives.,advice,Labelled using AI
 Expectations become inequitable when only one person's career or free time is treated as flexible.,analysis,Labelled using AI
 "People should not have to explain career, marriage, or childbearing choices to the whole family.",hot_take,cold
-Some family members want honesty only when the answer agrees with them.,complaint,Labelled using AI
+Some family members want honesty only when the answer agrees with them.,hot_take,cold
 "Financial independence can make boundaries easier, but it does not resolve every emotional dependency.",analysis,Labelled using AI
 Family gatherings become stressful when everyone feels entitled to comment on your life.,complaint,Labelled using AI
 "Every visit turns into questions about marriage, children, salary, and when I'll move back.",complaint,Labelled using AI
@@ -124,7 +124,7 @@ I can't plan my own holidays without someone acting like I've rejected the entir
 Respect for elders and respect for adult autonomy are not inherently incompatible.,analysis,cold
 "People's capacity to help changes over time, so a fair obligation should be revisable.",analysis,Labelled using AI
 It's unfair when one sibling's career is protected while another's is treated as optional.,complaint,Labelled using AI
-Family requests arrive as emergencies even when they have been planned for months.,complaint,Labelled using AI
+Family requests arrive as emergencies even when they have been planned for months.,hot_take,cold
 "Revisit family arrangements as people's health, finances, and schedules change.",advice,Labelled using AI
 "Financial support can strengthen family ties, but unclear expectations can turn it into leverage.",analysis,Labelled using AI
 Being the most dependable person in the family should not become your punishment.,hot_take,Labelled using AI
@@ -153,7 +153,7 @@ Keep some personal decisions private if sharing them repeatedly leads to pressur
 Give yourself time to consider major commitments before answering.,advice,Labelled using AI
 Being nearby does not make you automatically responsible for every family emergency.,hot_take,cold
 Some relatives only call when they need money or a favor.,complaint,Labelled using AI
-Constant comparisons with cousins and siblings make support feel conditional.,complaint,Labelled using AI
+Constant comparisons with cousins and siblings make support feel conditional.,analysis,cold
 It's unfair when the family expects one person to absorb every inconvenience.,complaint,Labelled using AI
 "Ask whether a request comes from genuine need, tradition, reputation, or fear of judgment.",advice,Labelled using AI
 Healthy interdependence leaves room for personal goals while recognizing mutual responsibilities.,analysis,Labelled using AI
@@ -195,7 +195,7 @@ I'm tired of being told to follow my dreams until those dreams inconvenience my 
 Recognize the difference between offering advice and expecting obedience.,advice,cold
 Choosing yourself is not automatically selfish; sometimes it is overdue.,hot_take,Labelled using AI
 Being available all the time is not the same as being loving.,hot_take,Labelled using AI
-Some families treat independence as betrayal instead of a normal part of adulthood.,complaint,Labelled using AI
+Some families treat independence as betrayal instead of a normal part of adulthood.,hot_take,cold
 Relatives should not confuse access to you with ownership of you.,hot_take,Labelled using AI
 Explain what respect means to you instead of arguing over labels like disrespectful.,advice,Labelled using AI
 "Helping out of fear may look like devotion, but it often creates resentment.",analysis,cold
