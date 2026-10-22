@@ -483,6 +483,17 @@ I meant the complaint lables to capture the personal vent and frustration of a p
 Biggest confusion: 4 real `complaint` posts called `hot_take`.
 The other direction: 0 real `hot_take` posts called `complaint`.
 
+## Stretch: A per-label error write-up
+advice: very good. 15 of 15 correct on every seed, and only one false positive (one hot_take post called advice). 
+
+hot_take: found well, but over-predicted. The model finds 27 of 30 real hot_take posts (90% recall). But when it predicts hot_take, it's right only 56% of the time, because 13 complaints and 8 analysis posts also end up there. The model treats hot_take as its default answer when it's unsure.
+
+analysis: decent. 19 of 27 found (70% recall), and right 79% of the time when predicted. 
+
+complaint: the problem label. Only 2 of 18 found (11% recall), and 13 of those 18 went to hot_take. The model almost never predicts complaint. 
+
+## Stretch: A confidence check 
+On every seed, both before and after relabelling, the model's most-confident third of predictions was right more often than its least-confident third. 
 
 <!-- ═════════════════════════════════════════════════════════════════════
 
