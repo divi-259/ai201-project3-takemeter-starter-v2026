@@ -333,11 +333,11 @@ which more often means the boundary itself is genuinely hard.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy | ≥ 0.70 on all three seeds | **MISSED** | 0.767 and 0.767 pass, but seed 2024 got 0.633. |
+| 2 | Per-label F1 | `complaint` ≥ 0.70, `hot_take` and `analysis` ≥ 0.60, `advice` ≥ 0.55, on all three seeds | **MISSED** | `complaint` got 0.857 and 0.714, then 0.000 on seed 2024. The other three labels passed on every seed (lowest: `hot_take` 0.625, `analysis` 0.609, `advice` 1.000). |
+| 3 | Balance | Largest label ≤ 2× the smallest | **MET** | `hot_take` 60 vs `advice` 35 = 1.7×. |
+| 4 | Consistency | ≥ 80% agreement with staff labels | **MET** | 29 / 30 = 97% from `agreement.py`. |
+| 5 | Confidence | When ≥ 80% confident, right ≥ 80% of the time, on all three seeds | **CAN'T MEASURE** | Mean confidence is only 0.29–0.33 on every seed, so almost no prediction reaches 0.80, and the results file doesn't save per-post confidence. The closest check: the most-confident third was right 0.80 / 1.00 / 0.90 of the time, vs 0.70 / 0.60 / 0.20 for the least-confident third. |
 
 **Diagnoses**
 
@@ -350,8 +350,9 @@ which more often means the boundary itself is genuinely hard.
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
 
+Both misses come from seed 2024, where 6 of the 8 complaint posts were predicted as analysis. Agreement report suggests that labelling is mostly consistent.  That points to a model and data problem rather than a labelling one. 
 
-
+For criteria 5 - Average confidence is only about 0.30 on every seed, so almost no prediction reaches 0.80, and the results file doesn't save each post's confidence. The criterion can't give a verdict either way. 
 ---
 
 ## Agreement Report

@@ -95,7 +95,13 @@ When I label the 30 staff posts, I agree with the staff labels on at least 80% o
 
 <!-- Your criterion. -->
 
-When the model is at least 80% confident, its prediction is right at least 80% of the time, on all three seeds.
+Original: When the model is at least 80% confident, its prediction is right at least 80% of the time, on all three seeds.
+
+Revised: On all three seeds, the most-confident third is right more often than the least-confident third on all three seeds"
+
+**Why for revised:** 
+The original criterion couldn't be measured. The model's
+average confidence was only about 0.30 on every seed, so almost no prediction reached 80%, and the results file doesn't save each post's confidence. That left me with nothing to check. Comparing the most-confident third against the least-confident third uses all 30 test posts, and the notebook reports it for every seed.
 
 **Why this target:** A confident prediction should be right more often than the 0.70 overall target. If it isn't, I can't use the confidence score to decide which predictions need a second look.
 
