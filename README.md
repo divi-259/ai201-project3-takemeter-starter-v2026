@@ -362,7 +362,7 @@ which more often means the boundary itself is genuinely hard.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** __29_ / 30 = _97__%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -385,25 +385,34 @@ which more often means the boundary itself is genuinely hard.
      what you did across your own 200. -->
 
 **1.**
-> *The post:*
+> *The post:* "The club needs to stop pretending the Tuesday session is for everyone. It isn't and it never has been."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `hot_take` / `reaction`
 >
-> *My call, and why:*
+> *My call, and why:* Staff is right. I first chose `reaction` because the post
+> sounds frustrated. But rule 2 says `reaction` is about what just happened to
+> the writer, and `hot_take` is a general claim about the world. This post
+> doesn't describe any event or the writer's own experience. It makes a general
+> claim about the club. The rule also says a heated post can still be
+> `hot_take`.
 >
-> *Which pile:*
+> *Which pile:* **(a)**. The rule covered it and I applied it loosely.
 
-**2.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
+**The piles**
+
+| Pile | Posts | Count |
+|---|---|---|
+| (a) Rule covered it, I applied it loosely | #1 (Tuesday session) | 1 |
+| (b) Rule doesn't say (gap in the definitions) | none | 0 |
+| (c) Rule is ambiguous, my reading is defensible | none | 0 |
 
 **What the pattern in my disagreements tells me:**
-
+My only disagreement is in pile (a), so it is a consistency problem, not a gap
+in the rules. I treated strong emotion as the sign of `reaction`. Under the
+staff rules, the real test is whether the post is about something that just
+happened to the writer. I may have made the same mistake in my own 200 labels,
+using angry tone to choose `complaint` over `hot_take` instead of checking
+whether the post is about a specific situation or a general claim.
 
 
 ---

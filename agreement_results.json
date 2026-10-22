@@ -1,0 +1,13 @@
+{
+  "compared": 30,
+  "agreed": 29,
+  "agreement_rate": 0.9666666666666667,
+  "disagreements": [
+    {
+      "text": "The club needs to stop pretending the Tuesday session is for everyone. It isn't and it never has been.",
+      "staff": "hot_take",
+      "mine": "reaction"
+    }
+  ],
+  "staff_posts_not_in_mine": 0
+}
